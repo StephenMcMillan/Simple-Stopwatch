@@ -10,4 +10,13 @@
 
 @interface SMViewController : UIViewController
 
+@property (strong) UIImage *background;
+@property (strong) IBOutlet UIImageView *backgroundImage;
+@property (strong, nonatomic) IBOutlet UILabel *timeLabel;
+@property (strong, nonatomic) IBOutlet UIButton *startButtonLabel;
+@property (nonatomic) NSMutableArray *elapsedTimes;
+
+- (IBAction)startButton:(id)sender;
+- (IBAction)resetButton:(id)sender;
+
 @end

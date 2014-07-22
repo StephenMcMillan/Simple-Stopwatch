@@ -21,6 +21,7 @@
 		CE6072E119781E3000CF19FB /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CE6072C319781E3000CF19FB /* UIKit.framework */; };
 		CE6072E919781E3000CF19FB /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = CE6072E719781E3000CF19FB /* InfoPlist.strings */; };
 		CE6072EB19781E3000CF19FB /* Simple_StopwatchTests.m in Sources */ = {isa = PBXBuildFile; fileRef = CE6072EA19781E3000CF19FB /* Simple_StopwatchTests.m */; };
+		CE6072F61978203C00CF19FB /* SMOptionsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CE6072F51978203C00CF19FB /* SMOptionsViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -53,6 +54,8 @@
 		CE6072E619781E3000CF19FB /* Simple StopwatchTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "Simple StopwatchTests-Info.plist"; sourceTree = "<group>"; };
 		CE6072E819781E3000CF19FB /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		CE6072EA19781E3000CF19FB /* Simple_StopwatchTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Simple_StopwatchTests.m; sourceTree = "<group>"; };
+		CE6072F41978203C00CF19FB /* SMOptionsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SMOptionsViewController.h; sourceTree = "<group>"; };
+		CE6072F51978203C00CF19FB /* SMOptionsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SMOptionsViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -119,6 +122,8 @@
 				CE6072D519781E3000CF19FB /* SMViewController.m */,
 				CE6072D719781E3000CF19FB /* Images.xcassets */,
 				CE6072C619781E3000CF19FB /* Supporting Files */,
+				CE6072F41978203C00CF19FB /* SMOptionsViewController.h */,
+				CE6072F51978203C00CF19FB /* SMOptionsViewController.m */,
 			);
 			path = "Simple Stopwatch";
 			sourceTree = "<group>";
@@ -253,6 +258,7 @@
 				CE6072D019781E3000CF19FB /* SMAppDelegate.m in Sources */,
 				CE6072D619781E3000CF19FB /* SMViewController.m in Sources */,
 				CE6072CC19781E3000CF19FB /* main.m in Sources */,
+				CE6072F61978203C00CF19FB /* SMOptionsViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -377,9 +383,11 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				CODE_SIGN_IDENTITY = "";
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "Simple Stopwatch/Simple Stopwatch-Prefix.pch";
 				INFOPLIST_FILE = "Simple Stopwatch/Simple Stopwatch-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = app;
 			};
@@ -390,9 +398,11 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				CODE_SIGN_IDENTITY = "";
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "Simple Stopwatch/Simple Stopwatch-Prefix.pch";
 				INFOPLIST_FILE = "Simple Stopwatch/Simple Stopwatch-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = app;
 			};
@@ -457,6 +467,7 @@
 				CE6072F019781E3000CF19FB /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		CE6072F119781E3000CF19FB /* Build configuration list for PBXNativeTarget "Simple StopwatchTests" */ = {
 			isa = XCConfigurationList;
@@ -465,6 +476,7 @@
 				CE6072F319781E3000CF19FB /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
